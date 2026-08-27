@@ -1,10 +1,95 @@
-.container{
+header {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50; /* Cor de fundo escura */
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    /* Se for colocar uma imagem ou texto depois, ajuste aqui */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Espaço entre os links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: opacity 0.2s;
+  }
+  
+  nav a:hover {
+    opacity: 0.7; /* Efeito suave ao passar o mouse */
+  }
+  .favoritos-container {
+  padding: 2rem;
+  font-family: sans-serif;
 }
 
-app-content{
-    flex-grow: 1;
+.favoritos-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.produtos-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.produto-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.produto-img {
+  background: #eee;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.produto-info {
+  padding: 1rem;
+}
+
+.produto-info h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.preco {
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.produto-info button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produto-info button:hover {
+  background-color: #1f618d;
 }

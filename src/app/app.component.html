@@ -1,5 +1,49 @@
-<div class="container">
-  <app-header></app-header>
-  <app-content></app-content>
-  <app-footer></app-footer>
-</div>
+<app-header>
+  <header>
+<div class="logo"></div>
+<nav>
+  <ul>
+    <li><a href="">Link a</a></li>
+    <li><a href="">Link b</a></li>
+    <li><a href="">Link c</a></li>
+  </ul>
+</nav>
+</header>
+</app-header>
+<app-content>
+  <section class="favoritos-container">
+    <h2>Meus Produtos Favoritos</h2>
+    
+    <div class="produtos-grid">
+      <!-- Produto 1 -->
+      <div class="produto-card">
+        <div class="produto-img">Imagem</div>
+        <div class="produto-info">
+          <h3>Nome do Produto 1</h3>
+          <p class="preco">R$ 99,90</p>
+          <button>Ver Detalhes</button>
+        </div>
+      </div>
+  
+      <!-- Produto 2 -->
+      <div class="produto-card">
+        <div class="produto-img">Imagem</div>
+        <div class="produto-info">
+          <h3>Nome do Produto 2</h3>
+          <p class="preco">R$ 149,90</p>
+          <button>Ver Detalhes</button>
+        </div>
+      </div>
+  
+      <!-- Produto 3 -->
+      <div class="produto-card">
+        <div class="produto-img">Imagem</div>
+        <div class="produto-info">
+          <h3>Nome do Produto 3</h3>
+          <p class="preco">R$ 199,90</p>
+          <button>Ver Detalhes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</app-content>
