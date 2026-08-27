@@ -2,94 +2,198 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50; /* Cor de fundo escura */
+    background-color: #ffb6c1; /* Rosa claro bem fofinho (Kawaii Pink) */
+    border-bottom: 4px dashed #ff69b4; /* Borda tracejada charmosa */
     padding: 1rem 2rem;
-    color: white;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
   }
   
   .logo {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    /* Se for colocar uma imagem ou texto depois, ajuste aqui */
+    color: #d12368;
+    text-shadow: 2px 2px 0px #fff; /* Estilo arcade/pixel fofo */
+    letter-spacing: 1px;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem; /* Espaço entre os links */
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
   }
   
   nav a {
-    color: white;
+    color: #d12368;
+    font-weight: bold;
     text-decoration: none;
-    font-family: sans-serif;
-    transition: opacity 0.2s;
+    font-family: 'Comic Sans MS', 'Verdana', sans-serif;
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 20px; /* Estilo pílula / botão de jogo */
+    border: 2px solid #ff69b4;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 0 #ff69b4; /* Efeito de botão de videogame 3D */
   }
   
   nav a:hover {
-    opacity: 0.7; /* Efeito suave ao passar o mouse */
+    background-color: #ff69b4;
+    color: white;
+    transform: translateY(-2px); /* Efeito de pulinho */
+    box-shadow: 0 5px 0 #d12368;
   }
+
   .favoritos-container {
-  padding: 2rem;
-  font-family: sans-serif;
-}
+    padding: 2rem;
+    font-family: 'Comic Sans MS', 'Verdana', sans-serif;
+    background-color: #fff0f5; /* Fundo rosa super claro (Lavender Blush) */
+    min-height: 80vh;
+  }
 
-.favoritos-container h2 {
-  margin-bottom: 1.5rem;
-  color: #333;
-}
+  .favoritos-container h2 {
+    margin-bottom: 1.5rem;
+    color: #ff1493; /* Rosa pink vibrante */
+    text-align: center;
+    text-shadow: 2px 2px 0px #ffd1dc;
+    font-size: 1.8rem;
+  }
 
-.produtos-grid {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
+  .produtos-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.produto-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 220px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+  .produto-card {
+    background: #ffffff;
+    border: 3px solid #ffb6c1;
+    border-radius: 16px; /* Bem arredondado */
+    width: 220px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.4);
+    transition: transform 0.2s ease;
+  }
 
-.produto-img {
-  background: #eee;
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888;
-}
+  .produto-card:hover {
+    transform: scale(1.03); /* Dá um zoom fofo quando passa o mouse */
+  }
 
-.produto-info {
-  padding: 1rem;
-}
+  .produto-img {
+    background: #ffe4e1; /* Tom pêssego/rosa claro */
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d12368;
+    font-weight: bold;
+    border-bottom: 2px dashed #ffb6c1;
+  }
 
-.produto-info h3 {
-  font-size: 1rem;
-  margin: 0 0 0.5rem 0;
-}
+  .produto-info {
+    padding: 1.2rem;
+  }
 
-.preco {
-  color: #27ae60;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
+  .produto-info h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    color: #4a4a4a;
+  }
 
-.produto-info button {
-  width: 100%;
-  padding: 0.5rem;
-  background-color: #2980b9;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .preco {
+    color: #ff1493;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
 
-.produto-info button:hover {
-  background-color: #1f618d;
-}
+  .produto-info button {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: #ff69b4; /* Botão estilo item de RPG/Loja */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #d12368;
+    transition: all 0.1s ease;
+  }
+
+  .produto-info button:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #a01050;
+  }
+
+  .produto-info button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #a01050;
+  }
+  .kawaii-footer {
+    background-color: #ffb6c1; /* Mesmo rosa fofinho do header */
+    border-top: 4px dashed #ff69b4; /* Linha tracejada charmosa em cima */
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Verdana', sans-serif;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(255, 105, 180, 0.3);
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .footer-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d12368;
+    text-shadow: 2px 2px 0px #fff;
+  }
+  
+  .footer-text {
+    color: #d12368;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .footer-links a {
+    color: #d12368;
+    text-decoration: none;
+    font-size: 0.9rem;
+    background: #fff;
+    padding: 4px 12px;
+    border-radius: 15px;
+    border: 2px solid #ff69b4;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 0 #ff69b4;
+  }
+  
+  .footer-links a:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 #d12368;
+  }
+  
+  .footer-bottom {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    color: #a01050;
+  }
