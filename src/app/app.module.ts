@@ -9,6 +9,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { LogoComponent } from './componentes/header/logo/logo.component';
 import { BuscaComponent } from './componentes/header/busca/busca.component';
 import { NavlinksComponent } from './componentes/header/navlinks/navlinks.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavlinksComponent } from './componentes/header/navlinks/navlinks.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
