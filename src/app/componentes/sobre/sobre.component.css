@@ -1,0 +1,38 @@
+.sobre {
+    background-color: #FAF7F2;
+    padding: 4rem 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .sobre h1 {
+    color: #2E2E2E;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sobre p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+  
+  .skills h2 {
+    color: #2E2E2E;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .skill-badge {
+    background-color: #BFE3F0;
+    color: #2E2E2E;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }

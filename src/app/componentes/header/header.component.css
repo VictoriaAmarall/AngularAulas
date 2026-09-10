@@ -8,7 +8,7 @@
   }
   
   .logo {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #2E2E2E;
   }
@@ -16,6 +16,7 @@
   .nav-links {
     display: flex;
     gap: 2rem;
+
   }
   
   .nav-links a {
@@ -23,9 +24,13 @@
     color: #2E2E2E;
     font-weight: 500;
     transition: color 0.2s ease;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .nav-links a:hover {
     color: #7FB9D6;
+  }
+  .active-link {
+    color: #7FB9D6;
+    font-weight: 700;
   }
